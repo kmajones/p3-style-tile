@@ -1,22 +1,29 @@
 /*Typography*/
+@font-face { font-family: Neou-Thin; src: url('Neou-Thin.tff'); } 
 
-h1{
-	color:black;
-	font-family: 'Raleway';
+body {
+      font-family: 'Open Sans', sans-serif;
 }
+h1{
+	color:#45B29D;
+	font-family: "Neou-Thin", sans-serif;
+}
+
 h2{
-	color:orange;
-	font-family: 'Raleway';
+	color:#DF5A49;
+	font-family: "Neou-Thin", sans-serif;
 }
 h3{
-	color:blue;
-	font-family: 'Raleway';
+	color:#45B29D;
+	font-family: "Neou-Thin", sans-serif;
 }
 /* Set Your Own Margin & Padding */
-h2, h3, p {
+h2, h3{
 	margin: 0;
 }
-
+p{
+	margin:0 0 10px 0;
+}
 a{
 	border-bottom: 4px dotted red;
 	text-decoration: none;
@@ -24,12 +31,18 @@ a{
 
 /*Color Pallete*/
 .color-1{
-	background: orange;
+	background: #45B29D;
 
 }
 .color-2{
-	background: #f0f;
+	background: #DF5A49;
 	
+}
+.color-3{
+	background: #EFC94C;
+}
+.color-4{
+	background: #334D5C;
 }
 /* Layout for Style Tile*/
 section {
@@ -39,6 +52,7 @@ section {
 .color-1,
 .color-2,
 .color-3,
+.color-4,
 .pattern-1,
 .pattern-2,
 .pattern-3 {
