@@ -1,32 +1,44 @@
 /*Typography*/
-@font-face { font-family: Neou-Thin; src: url('Neou-Thin.tff'); } 
+@font-face { font-family: "Neou-Bold"; src: url('Neou-Bold.tff'); } 
 
 body {
       font-family: 'Open Sans', sans-serif;
+      background: url("../img/whitey.png");
 }
 h1{
 	color:#45B29D;
-	font-family: "Neou-Thin", sans-serif;
+	font-family: "myriad pro", sans-serif;
+	font-size: 2.5em;
 }
 
 h2{
 	color:#DF5A49;
-	font-family: "Neou-Thin", sans-serif;
+	font-family: "myriad pro", sans-serif;
+	font-size: 2.2em;
 }
 h3{
 	color:#45B29D;
-	font-family: "Neou-Thin", sans-serif;
+	font-family: "Neou-Bold", sans-serif;
 }
-/* Set Your Own Margin & Padding */
+
+/*Margin & Padding */
 h2, h3{
-	margin: 0;
+	margin: 10px 0;
 }
 p{
-	margin:0 0 10px 0;
+	margin:0 10px 10px 0;
 }
-a{
-	border-bottom: 4px dotted red;
+
+/*Link States*/
+a:link,
+a:visited{
 	text-decoration: none;
+	color:#45B29D;
+}
+a:hover,
+a:active{
+	text-decoration: none;
+	color:#DF5A49;
 }
 
 /*Color Pallete*/
@@ -39,10 +51,28 @@ a{
 	
 }
 .color-3{
-	background: #EFC94C;
+	background: #666;
 }
 .color-4{
 	background: #334D5C;
+}
+
+/*Textures*/
+
+.pattern-1{
+	background: url("../img/whitey.png");
+	
+}
+.pattern-2{
+	background: url("../img/bg2.png");
+	}
+
+.pattern-3{
+	background: url("../img/layout-1.png");
+	}	
+
+img[src*="design_logo"] {
+width:25%
 }
 /* Layout for Style Tile*/
 section {
@@ -59,12 +89,33 @@ section {
 	border: 1px solid #000;
 	float: left;
 	margin: 0 10px;
-	height: 50px;
-	width: 50px;
+	height: 75px;
+	width: 75px;
 }
+
+.color-1:hover,
+.color-2:hover,
+.color-3:hover,
+.color-4:hover,
+.pattern-1:hover,
+.pattern-2:hover,
+.pattern-3:hover {
+	opacity:.5;
+}
+
 
 
 /* Show Grid */
 .showgrid {
 	background: url("../img/grid-bg.png") repeat-y;
 }
+
+/*RWD*/
+.container{
+width:90%;
+}
+
+section p{
+	width:75%;
+}
+
